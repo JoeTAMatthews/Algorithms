@@ -47,6 +47,8 @@ public class UnionFind {
     while (p != root) {
       int next = id[p];
       id[p] = root;
+      
+      // Changing to the next path until you reach the root.
       p = next;
     }
 
